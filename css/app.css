@@ -510,4 +510,93 @@ p {
   }
 }
 
+.clases {
+  background-color: #f5f5f5;
+  padding: 5rem 0;
+}
+.clases__heading {
+  text-align: center;
+}
+.clases__heading::after {
+  content: "";
+  display: block;
+  height: 10rem;
+  margin: 0 auto;
+  background-image: url(../public/img/separador.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .clases__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+}
+@media (min-width: 1024px) {
+  .clases__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.clase {
+  border: 1px solid gainsboro;
+  background-color: #FFFFFF;
+}
+.clase__imagen {
+  width: 100%;
+}
+.clase__meta {
+  background-color: #f46669;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: #FFFFFF;
+}
+.clase__precio {
+  background-color: #c7c57d;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  border-radius: 1rem;
+}
+.clase__contenido {
+  padding: 2rem;
+}
+.clase__nombre {
+  min-height: 5.76rem;
+}
+.clase__descripcion {
+  color: #f46669;
+}
+.clase__enlace {
+  background-color: #f46669;
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .clase__enlace {
+    width: auto;
+  }
+}
+.clase__enlace:hover {
+  background-color: #f1363a;
+}
+
 /*# sourceMappingURL=app.css.map */
