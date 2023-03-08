@@ -638,4 +638,32 @@ p {
   background-color: #f1363a;
 }
 
+.footer {
+  padding: 3rem 0;
+  border-bottom: 0.5rem solid #f46669;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+}
+@media (min-width: 1024px) {
+  .footer__copyright {
+    margin: 0;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
